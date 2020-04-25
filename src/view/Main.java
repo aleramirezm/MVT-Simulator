@@ -1,0 +1,28 @@
+/*
+* Authors: Alejandra Ramirez & Miguel Zapata
+* This a MVT simulator, which is a memory management technique.
+ */
+
+package view;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class Main extends Application {
+
+    @Override
+    public void start(Stage primaryStage) throws Exception{
+        Parent root = FXMLLoader.load(getClass().getResource("view.fxml"));
+        primaryStage.setTitle("MVT Simulator");
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
+    }
+
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
